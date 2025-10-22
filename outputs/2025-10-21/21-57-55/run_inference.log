@@ -1,0 +1,8 @@
+[2025-10-21 21:57:55,152][__main__][INFO] - ////////////////////////////////////////////////
+[2025-10-21 21:57:55,152][__main__][INFO] - ///// NO GPU DETECTED! Falling back to CPU /////
+[2025-10-21 21:57:55,152][__main__][INFO] - ////////////////////////////////////////////////
+[2025-10-21 21:57:55,153][rfdiffusion.inference.model_runners][INFO] - Reading checkpoint from /srv/scratch/z5358491/RFdiffusion/rfdiffusion/inference/../../models/Base_ckpt.pt
+[2025-10-21 21:58:00,096][rfdiffusion.inference.model_runners][INFO] - Loading checkpoint.
+[2025-10-21 21:58:00,269][rfdiffusion.diffusion][INFO] - Using cached IGSO3.
+[2025-10-21 21:58:00,626][__main__][INFO] - Making design 5dk3_outputs/heavy_5aa_unconditional/run_0
+[2025-10-21 21:58:00,904][rfdiffusion.inference.model_runners][INFO] - Using contig: ['B1-122/5/B123-444']

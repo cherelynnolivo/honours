@@ -1,0 +1,6 @@
+[2025-10-21 22:00:17,382][__main__][INFO] - Found GPU with device_name NVIDIA L40S. Will run RFdiffusion on NVIDIA L40S
+[2025-10-21 22:00:17,382][rfdiffusion.inference.model_runners][INFO] - Reading checkpoint from /srv/scratch/z5358491/RFdiffusion/rfdiffusion/inference/../../models/Base_ckpt.pt
+[2025-10-21 22:00:19,626][rfdiffusion.inference.model_runners][INFO] - Loading checkpoint.
+[2025-10-21 22:00:19,714][rfdiffusion.diffusion][INFO] - Using cached IGSO3.
+[2025-10-21 22:00:19,879][__main__][INFO] - Making design 5dk3_outputs/heavy_5aa_unconditional/run_0
+[2025-10-21 22:00:20,031][rfdiffusion.inference.model_runners][INFO] - Using contig: ['B1-122/5/B123-444']

@@ -1,0 +1,4 @@
+- inference.input_pdb=5DK3.pdb
+- inference.output_prefix=5dk3_outputs/heavy_light_5aa_unconditional/run
+- inference.num_designs=3
+- contigmap.contigs=[A1-218/0 B1-122/50/B123-226/B233-444]

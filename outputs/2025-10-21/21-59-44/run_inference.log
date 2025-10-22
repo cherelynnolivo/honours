@@ -1,0 +1,4 @@
+[2025-10-21 21:59:44,975][__main__][INFO] - Found GPU with device_name NVIDIA L40S. Will run RFdiffusion on NVIDIA L40S
+[2025-10-21 21:59:44,975][rfdiffusion.inference.model_runners][INFO] - Reading checkpoint from /srv/scratch/z5358491/RFdiffusion/rfdiffusion/inference/../../models/Base_ckpt.pt
+[2025-10-21 21:59:47,164][rfdiffusion.inference.model_runners][INFO] - Loading checkpoint.
+[2025-10-21 21:59:47,255][rfdiffusion.diffusion][INFO] - Using cached IGSO3.
