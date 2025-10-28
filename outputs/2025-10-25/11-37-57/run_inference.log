@@ -1,0 +1,6 @@
+[2025-10-25 11:37:58,018][__main__][INFO] - Found GPU with device_name Tesla V100-SXM2-32GB. Will run RFdiffusion on Tesla V100-SXM2-32GB
+[2025-10-25 11:37:58,019][rfdiffusion.inference.model_runners][INFO] - Reading checkpoint from /srv/scratch/z5358491/RFdiffusion/rfdiffusion/inference/../../models/Base_ckpt.pt
+[2025-10-25 11:38:02,075][rfdiffusion.inference.model_runners][INFO] - Loading checkpoint.
+[2025-10-25 11:38:02,232][rfdiffusion.diffusion][INFO] - Using cached IGSO3.
+[2025-10-25 11:38:02,583][__main__][INFO] - Making design 5dk3_outputs/both_fab_5aa_unconditional/run_0
+[2025-10-25 11:38:02,907][rfdiffusion.inference.model_runners][INFO] - Using contig: ['A1-114/5/A115-218/0 B1-122/5/B123-226/B233-444/0 F1-114/5/F115-218/0 G1-122/5/G123-226/G235-444']
