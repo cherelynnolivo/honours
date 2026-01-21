@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#PBS -l select=1:ncpus=8:mem=46gb:ngpus=1
+#PBS -l walltime=6:00:00
+#PBS -M z5358491@ad.unsw.edu.au
+#PBS -m ae
+#PBS -j oe
+
+# Change to the directory where the job was submitted
+cd $PBS_O_WORKDIR
+
+# Set your RFDiffusion directory path
+RFDIFF_DIR="/srv/scratch/z5358491/RFdiffusion/5DK3_scripts"
+PDB_FILE="./5dk3_structures/5dk3_15A.pdb"
+OUTPUT_BASE="5dk3_full_15A_50AA_outputs"
+
+# Create output directory
+mkdir -p $OUTPUT_BASE
+
+# Navigate to working directory
+cd $RFDIFF_DIR
+
+# Initialize conda for bash shell
+source ~/miniconda3/etc/profile.d/conda.sh
+
+# Activate the SE3nv conda environment
+conda activate /srv/scratch/z5358491/miniconda3/envs/SE3nv
+
+# Print current directory and conda environment for verification
+echo "Current directory: $(pwd)"
+echo "Active conda environment: $CONDA_DEFAULT_ENV"
+
+# Run RFdiffusion inference
+python ../scripts/run_inference.py inference.input_pdb=$PDB_FILE \
+  inference.output_prefix=$OUTPUT_BASE/run \
+  inference.num_designs=10 \
+  contigmap.contigs='[A1-218/0 B1-226/B233-238/50/B239-444/0 F1-218/0 G1-229/G236-238/50/G239-444/0]'
