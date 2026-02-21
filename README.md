@@ -151,6 +151,8 @@ bash 20A_30AA_script.sh
 ```bash
 cd honours/boltz/20A
 qsub run_boltz_30AA_run_0.pbs
+# to check status of job
+qstat -u $USER -w
 ```
 
 ## Dependencies
