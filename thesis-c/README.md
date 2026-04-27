@@ -14,6 +14,21 @@ This directory contains the scripts for analyzing Boltz predictions and comparin
 | `gen_best_pae.sh` | Generates PAE (predicted aligned error) plots for best designs |
 | `gen_best_pae_control.sh` | Generates control PAE plots for comparison |
 | `gen_all_pae_control.sh` | Generates PAE plots for all control structures |
+| `select_best_mpnn.py` | Selects best designs from ProteinMPNN outputs |
+
+### Insertion Experiments
+
+| Script | Description |
+|--------|-------------|
+| `*_insertion.pbs` | PBS job scripts for RFdiffusion insertion experiments |
+| `*_insertion.sh` | Shell scripts to run insertion workflows |
+| `insertion_rfdiffusion/*/` | Base structure files for insertion experiments |
+
+### Replacement Experiments
+
+| Script | Description |
+|--------|-------------|
+| `*_replacement.pbs` | PBS job scripts for replacement experiments |
 
 ### Visualization Scripts
 
@@ -33,6 +48,7 @@ This directory contains the scripts for analyzing Boltz predictions and comparin
 | File | Description |
 |------|-------------|
 | `5dk3_cleaned.cif` | Cleaned 5DK3 structure in mmCIF format |
+| `insertion_rfdiffusion/*/5dk3_v2_*A_base.cif` | Base structures for insertion experiments (10A, 20A, 30A, 40A, 50A) |
 
 ## Usage Examples
 
@@ -70,6 +86,16 @@ Note: The following folders contain Boltz prediction outputs and are NOT copied 
 - `base_FG_fixed/` - FG fixed experiments
 - `best_pae_plots/` - Best PAE visualizations
 - `control_pae_plots/` - Control PAE visualizations
+- `insertion_rfdiffusion/` - RFdiffusion insertion outputs
+- `proteinmpnn/` - ProteinMPNN design outputs
+
+## Experiment Types
+
+The new scripts support the following experimental configurations:
+
+- **Insertion**: Insert residues at varying positions (10, 12, 20, 30, 40, 50 aa lengths)
+- **Replacement**: Replace residues with varying lengths (10, 12, 20, 30, 40, 50 aa)
+- **Scaffold variants**: 10A, 20A, 30A, 40A, 50A configurations
 
 ## Dependencies
 
